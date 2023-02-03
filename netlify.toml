@@ -1,5 +1,5 @@
 [template.environment]
-  TEXT_RAZOR_API_KEY = "TEXT_RAZOR_API_KEY"
+  REACT_APP_TEXT_RAZOR_API_KEY = "REACT_APP_TEXT_RAZOR_API_KEY"
 
 [[headers]]
   for = "/*"
