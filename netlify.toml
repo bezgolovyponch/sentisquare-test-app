@@ -1,0 +1,20 @@
+[build]
+  command = "yarn deploy"
+  publish = "out"
+
+[[plugins]]
+  package = "netlify-plugin-onboarding"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+[plugins.inputs]
+buildDir = "public"
+
+[template.environment]
+  TEXT_RAZOR_API_KEY = "TEXT_RAZOR_API_KEY"
+  
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
