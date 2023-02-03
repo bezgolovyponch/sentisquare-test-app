@@ -1,7 +1,7 @@
 import axios, { AxiosProgressEvent } from "axios";
 
-const url = "http://api.textrazor.com";
-const key = "";
+const url = "https://api.textrazor.com";
+const key = process.env.TEXT_RAZOR_API_KEY;
 
 const upload = async (file: any, onUploadProgress?: (progressEvent: AxiosProgressEvent) => void) => {
   const urlencoded = new URLSearchParams();
