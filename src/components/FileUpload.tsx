@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import FileUploadService from "../services/FileUploadService";
 import Chart, { CustomPieChart } from "./Chart";
 import MatchedEntitiesList from "./ListGroup";
+
 const defaultText = "George Bush was president of USA.";
+
 export const UploadFiles = () => {
   const [currentFile, setCurrentFile] = useState(defaultText);
   const [progress, setProgress] = useState(0);
@@ -21,10 +23,10 @@ export const UploadFiles = () => {
       const content = reader.result;
       //Here the content has been read successfuly
       console.log(content);
+      setCurrentFile(content);
     };
 
     reader.readAsText(selectedFiles?.[0]);
-    setCurrentFile(selectedFiles?.[0]);
     setProgress(0);
   };
 
@@ -83,12 +85,12 @@ export const UploadFiles = () => {
       )}
       {fileInfos !== null ? (
         <div>
-          <h6>Matched entities in analyzed text, amount</h6>
-          <MatchedEntitiesList data={fileInfos?.response.entities} />
           <div>
             <Chart data={fileInfos?.response.entities} />
             <CustomPieChart data={fileInfos?.response.entities} />
           </div>
+          <h6>Matched entities in analyzed text, amount</h6>
+          <MatchedEntitiesList data={fileInfos?.response.entities} />
         </div>
       ) : null}
     </div>
