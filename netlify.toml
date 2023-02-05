@@ -5,3 +5,11 @@
   for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/*"
+  to = "https://api.textrazor.com"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  signed = "REACT_APP_TEXT_RAZOR_API_KEY"

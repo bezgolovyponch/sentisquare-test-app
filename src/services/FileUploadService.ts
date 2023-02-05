@@ -1,9 +1,9 @@
-import axios, { AxiosProgressEvent } from "axios";
+import axios from "axios";
 
 const url = "https://api.textrazor.com";
 const key = process.env.REACT_APP_TEXT_RAZOR_API_KEY;
 
-const upload = async (file: any, onUploadProgress?: (progressEvent: AxiosProgressEvent) => void) => {
+const upload = async (file: any) => {
   const urlencoded = new URLSearchParams();
   urlencoded.append("extractors", "entities,words");
   urlencoded.append(
@@ -16,9 +16,7 @@ const upload = async (file: any, onUploadProgress?: (progressEvent: AxiosProgres
       "Content-type": "application/x-www-form-urlencoded",
       "X-TextRazor-Key": key,
     },
-    onUploadProgress,
   });
-  console.log(key)
   return response;
 };
 

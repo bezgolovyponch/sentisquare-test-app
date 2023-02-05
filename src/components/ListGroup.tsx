@@ -10,17 +10,16 @@ function MatchedEntitiesList({ data }) {
       a[key].count++;
       return a;
     }, {})
-  )
-  
-const ret = countDuplicities.sort(({ count: a }, { count: b }) => b - a);
+  );
 
-const res = countDuplicities.sort(function(a: any, b: any) {
-  return a[1] - b[1];
-});
+  const sortedByCount = countDuplicities.sort(
+    ({ count: a }, { count: b }) => b - a
+  );
   return (
     <ListGroup as="ol" numbered>
-      {ret.map((item: any) => (
-        <ListGroup.Item key={item.key}
+      {sortedByCount.map((item: any) => (
+        <ListGroup.Item
+          key={item.key}
           as="li"
           className="d-flex justify-content-between align-items-start"
         >
