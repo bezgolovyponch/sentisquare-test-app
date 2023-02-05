@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Application for meaning extraction from .txt file and chart generation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that allows you to upload a text file and generate different charts based on the data in the file. The application is built using React and uses npm as the package manager.
 
-## Available Scripts
+## Getting Started
 
 In the project directory, you can run:
 
-### `npm start`
+Clone or download the repository to your local machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open a terminal window and navigate to the project directory
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Run **npm install** to install all the required dependencies
 
-### `npm test`
+Obtain TextRazor API key
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create .env file inside of the app root folder
 
-### `npm run build`
+Paste it there as **REACT_APP_TEXT_RAZOR_API_KEY="obtained_key"**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run **npm start** to start the development server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*Text razor API has No 'Access-Control-Allow-Origin' header  on the requested resource, since CORS needs to be handled from backend and Chrome is not able to load the response, we need to run the browser with web security disabled.*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**For Mac:
+run in terminal:
+open -na Google\ Chrome --args --user-data-dir=/tmp/temporary-chrome-profile-dir --disable-web-security --disable-site-isolation-trials**
 
-### `npm run eject`
+**For Chrome:
+Change Target in your Chrome shortcut
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --user-data-dir="C:\tmpChromeSession"**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Using the Application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click on the "Choose file" button to select a text file from your local machine
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Explore the charts based on the .txt file content you uploaded
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Dependencies
 
-## Learn More
+**axios**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**bootstrap**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**typescript**
+
+**recharts**
+
+**Live site:** https://text-razor-charts.netlify.app/
