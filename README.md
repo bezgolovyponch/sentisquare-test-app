@@ -1,4 +1,4 @@
-# Application for meaning extraction from .txt fime and chart generation
+# Application for meaning extraction from .txt file and chart generation
 
 This is a React application that allows you to upload a text file and generate different charts based on the data in the file. The application is built using React and uses npm as the package manager.
 
