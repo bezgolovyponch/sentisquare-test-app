@@ -10,9 +10,9 @@ Clone or download the repository to your local machine
 
 Open a terminal window and navigate to the project directory
 
-Run 'npm install' to install all the required dependencies
+Run ###'npm install' to install all the required dependencies
 
-Run 'npm start' to start the development server
+Run ###'npm start' to start the development server
 
 ## Using the Application
 
