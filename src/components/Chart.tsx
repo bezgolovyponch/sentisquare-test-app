@@ -129,11 +129,10 @@ export function CustomPieChart({ data }) {
   );
 
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={420}>
       <PieChart 
         margin={{
           top: 5,
-          right: 30,
           left: 350,
           bottom: 5,
         }}
