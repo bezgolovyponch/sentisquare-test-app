@@ -46,3 +46,4 @@ Explore the charts based on the .txt file content you uploaded
 
 **recharts**
 
+**Live site:** https://text-razor-charts.netlify.app/
