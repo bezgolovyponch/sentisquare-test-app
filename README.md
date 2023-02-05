@@ -20,7 +20,7 @@ Paste it there as **REACT_APP_TEXT_RAZOR_API_KEY="obtained_key"**
 
 Run **npm start** to start the development server
 
-*Text razor API has No 'Access-Control-Allow-Origin' header  on the requested resource, since CORS needs to be handled from backend and Chrome is not able to load a response, we need to run the browser with web security disabled.*
+*Text razor API has No 'Access-Control-Allow-Origin' header  on the requested resource, since CORS needs to be handled from backend and Chrome is not able to load the response, we need to run the browser with web security disabled.*
 
 **For Mac:
 run in terminal:
