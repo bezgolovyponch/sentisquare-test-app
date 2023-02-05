@@ -11,4 +11,5 @@
   to = "https://api.textrazor.com"
   status = 200
   force = true # COMMENT: ensure that we always redirect
-  headers = {X-From = "Netlify"}
+  headers = {X-From = "Netlify", "Content-type": "application/x-www-form-urlencoded", "X-TextRazor-Key": "REACT_APP_TEXT_RAZOR_API_KEY"}
+  signed = "REACT_APP_TEXT_RAZOR_API_KEY"
