@@ -6,11 +6,14 @@ import React from "react";
 function App() {
   return (
     <div className="App">
-      <div className="container" style={{ width: "100%" }}>
-        <div className="my-3">
-          <h4>File Upload</h4>
+      <div className="container my-5 shadow-lg p-5">
+        <h3 className="text-center text-black">Find Out Meaning Without Reading</h3>
+        <hr className="my-2" />
+        <div className="row">
+          <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+            <UploadFiles />
+          </div>
         </div>
-        <UploadFiles />
       </div>
     </div>
   );

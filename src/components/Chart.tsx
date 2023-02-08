@@ -130,22 +130,15 @@ export function CustomPieChart({ data }) {
 
   return (
     <ResponsiveContainer width="100%" height={420}>
-      <PieChart 
-        margin={{
-          top: 5,
-          left: 350,
-          bottom: 5,
-        }}
-      >
+      <PieChart>
         <Pie
-
           activeIndex={activeIndex}
           activeShape={renderActiveShape}
           data={countDuplicities}
-          cx={200}
-          cy={200}
-          innerRadius={100}
-          outerRadius={150}
+          cx="50%"
+          cy="50%"
+          innerRadius={60}
+          outerRadius={80}
           fill="#8884d8"
           dataKey="count"
           onMouseEnter={onPieEnter}

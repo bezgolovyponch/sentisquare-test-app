@@ -36,9 +36,10 @@ export const UploadFiles = () => {
   };
   return (
     <div>
-      <div className="col-4">
-        <label className="btn btn-default p-0">
-          <input type="file" onChange={selectFile} />
+      <div className="d-flex justify-content-center mt-2 mb-1">
+        <label className="btn btn-outline-primary">
+          Choose file
+          <input type="file" onChange={selectFile} style={{ display: "none" }} />
         </label>
       </div>
       {currentFile !== null && fileInfos !== null ? (
